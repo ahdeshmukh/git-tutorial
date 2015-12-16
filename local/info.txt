@@ -1,0 +1,37 @@
+Initialize git repository
+git init
+
+Adding files
+git add filename.
+if you want to add all files that have been updated (modified), do git add -u
+if you want to add all untracked files, do git add -A
+
+Commit files
+git commit filename -m "commit message"
+
+git log shows list of all the commits
+
+looking for differences
+git diff filename
+
+deleting a committed file
+git rm filename
+
+renaming a committed file
+git mv filename new_filename
+
+reverting changes
+git checkout filename (defaults to HEAD)
+if you have to revert changes to multiple files git reset --hard
+if you want to revert to previous commit while keeping the changes in your files for future commit use git reset --soft HEAD~1
+if you want to revert to previous commit while deleting the changes in your files use git reset --hard HEAD~1
+
+cleaning up the working copy
+if there are any untracked files that you want to remove you can run
+git clean -dn (dry run, will tell you what will be removed. d option also tells you which directories will be cleaned up)
+git clean -df (will actually remove all the untracked files. d option also tells you which directories will be cleaned up)
+
+.gitignore
+add files and folders here so git ignores them, (eg: logs)
+if you have a folder logs inside the root folder (eg: c:/git-tutorials/logs), which you want to ignore, you should add /logs to the .gitignore file. Doing so, git will ignore all files and subdirectories inside the logs folder.
+Note: if instead of /logs, you add logs/ to .gitignore, then git will ignore all folders by the name logs. This may be undesirable.
