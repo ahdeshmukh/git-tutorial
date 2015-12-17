@@ -1,0 +1,26 @@
+Get the jquery repository by doing git clone https://github.com/jquery/jquery.git
+
+This will create a folder by the name jquery and get he jquery repository data into the newly created folder.You can create a folder and then get the repository in the folder you created by doing
+mkdir your_new_folder
+cd your_new_folder
+git clone https://github.com/jquery/jquery.git .
+
+
+To get a list of commits, do git log
+If you want to see condensed version do git log --oneline
+To see the number of commits in a repository do git log --oneline | wc -l
+To see graph, do git log --oneline --graph
+To see commits by author do git shortlog ( gives by author name ascending + messages )
+To see only the summary do git shortlog -s ( gives by author name ascending + number of commits , skips messages )
+To see number of commits by authors do got shortlog -sne ( gives count of commits, grouped by email id of author by descending count number. s => summary, n => number descending, e => email id of author )
+
+To see the most recent commit, do git show HEAD
+
+To see the location of the remote repository, do git remote -v
+
+Branches - are often used as temporary working copies to separate main line development from bug fixes
+To see local branches, do git branch
+To see remote branches, do git branch -r
+
+Tags - these are stable points in your code base
+To see tags, do git tag
