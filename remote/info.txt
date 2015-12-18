@@ -1,6 +1,6 @@
 Get the jquery repository by doing git clone https://github.com/jquery/jquery.git
 
-This will create a folder by the name jquery and get he jquery repository data into the newly created folder.You can create a folder and then get the repository in the folder you created by doing
+This will create a folder by the name jquery and get the jquery repository data into the newly created folder.You can create a folder and then get the repository in the folder you created by doing
 mkdir your_new_folder
 cd your_new_folder
 git clone https://github.com/jquery/jquery.git .
@@ -32,6 +32,6 @@ To verify a tag, use git tag -v tag_name ( v => verify )
 
 To delete a tag, do git tag -d tag_name
 
-To push tags to remote we need to fo, git push --tags
+To push tags to remote we need to do, git push --tags
 
 
