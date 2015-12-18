@@ -2,3 +2,4 @@ First file - 1.txt
 hotfix1
 branch1
 hotfix1 - after deleting hotfix1 branch
+branch1 - after making hotfix1 changes after recovering the deleted branch
