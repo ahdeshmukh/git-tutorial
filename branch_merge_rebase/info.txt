@@ -16,3 +16,13 @@ git branch branch_name
 
 Getting to the branch
 git checkout branch_name
+
+Adding a branch and getting to it in one command
+git checkout -b branchname
+
+Git rename branch
+git branch -m branchname new_branchname ( m => move )
+
+Getting a deleted branch
+Do git reflog
+You will see the commit of the deleted branch before it was merged with master. Get the SHA number of the commit. Then do git branch branchname SHA
