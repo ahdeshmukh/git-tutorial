@@ -24,3 +24,14 @@ To see remote branches, do git branch -r
 
 Tags - these are stable points in your code base
 To see tags, do git tag
+To create a tag, do git tag tag_name ( eg: git tag v1.0)
+To create a tab with message (annotation), do git tag -a tag_name -m "message here"
+To create a tab with message (annotation), do git tag -s tag_name -m "message here"
+
+To verify a tag, use git tag -v tag_name ( v => verify )
+
+To delete a tag, do git tag -d tag_name
+
+To push tags to remote we need to fo, git push --tags
+
+
