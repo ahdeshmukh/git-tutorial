@@ -1,0 +1,17 @@
+git log --graph --oneline shows graph of the commits
+git log --graph --oneline --all shows graph with all branches rather just the current one
+git log --graph --oneline --all --decorate gives extra information by applying labels to the commits such as HEAD, tag, master etc..
+
+Creating alias
+git config --global alias.name "commands"
+eg: git config --global alias.lga "log --graph --oneline --all --decorate"
+after doing this, instead of issuing git log --graph --oneline --all --decorate, I can do git lga
+
+Adding a branch
+git branch branch_name
+
+Getting to the branch
+git checkout branch_name
+
+In one command
+git branch -b branch_name
