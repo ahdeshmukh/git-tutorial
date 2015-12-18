@@ -26,3 +26,5 @@ git branch -m branchname new_branchname ( m => move )
 Getting a deleted branch
 Do git reflog
 You will see the commit of the deleted branch before it was merged with master. Get the SHA number of the commit. Then do git branch branchname SHA
+
+if you want to carry over stash to new branch, do git stash branch branchname
