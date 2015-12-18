@@ -1,3 +1,7 @@
+Difference between branch and tag
+Branches follow the commits and move along
+Tags always stay on the same commit
+
 git log --graph --oneline shows graph of the commits
 git log --graph --oneline --all shows graph with all branches rather just the current one
 git log --graph --oneline --all --decorate gives extra information by applying labels to the commits such as HEAD, tag, master etc..
@@ -12,6 +16,3 @@ git branch branch_name
 
 Getting to the branch
 git checkout branch_name
-
-In one command
-git branch -b branch_name
