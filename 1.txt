@@ -3,3 +3,4 @@ hotfix1
 branch1
 hotfix1 - after deleting hotfix1 branch
 branch1 - after making hotfix1 changes after recovering the deleted branch
+Fix 1 - v1.0
