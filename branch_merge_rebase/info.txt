@@ -28,3 +28,10 @@ Do git reflog
 You will see the commit of the deleted branch before it was merged with master. Get the SHA number of the commit. Then do git branch branchname SHA
 
 if you want to carry over stash to new branch, do git stash branch branchname
+
+Cheery picking changes
+suppose you are working on a branch, and you have made multiple commits on the branch. eg: commit1, commit2, commit3
+Now you want to apply just the commit1 from the branch to the master.
+You cannot do git merge as it will also apply commit2, commit3 to the master
+In this case you can do, git cherry-pick (SHA of )commit1
+This way you only apply commit1 from the branch to the master
