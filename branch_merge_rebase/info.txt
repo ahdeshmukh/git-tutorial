@@ -35,3 +35,4 @@ Now you want to apply just the commit1 from the branch to the master.
 You cannot do git merge as it will also apply commit2, commit3 to the master
 In this case you can do, git cherry-pick (SHA of )commit1
 This way you only apply commit1 from the branch to the master
+Now later, if you merge your branch with master, git will know commit1 was already applied by cherry-pick, and will not reapply it. Only commit2 and commit3 will be applied to the merge.
