@@ -20,6 +20,9 @@ git rm filename
 renaming a committed file
 git mv filename new_filename
 
+Get a list of files by commit number
+git show --pretty="" --name-only #commitNumberHash
+
 reverting changes
 git checkout filename (defaults to HEAD)
 if you have to revert changes to multiple files git reset --hard
