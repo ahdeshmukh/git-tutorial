@@ -17,6 +17,19 @@ git branch branch_name
 Getting to the branch
 git checkout branch_name
 
+Getting branch/branches while doing git clone
+when you clone a git repo on your local, it only clones the master branch, but it keeps the information of all other branches in the repo on github
+eg: on github if you have created a branch by the name 'experimental-123', when you do git clone, you won't get experimental-123. If you need to get experimental-123, do the following after git clone
+git branch (will only show master)
+git branch -a will show output as follows
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/experimental-123
+If you want to just take a quick peek at an upstream branch, you can check it out directly by doing
+git checkout origin/experimental-123
+But if you want to work on that branch, you'll need to create a local tracking branch by doing
+git checkout -b experimental-123 origin/experimental-123 (This will create experimental-123 on your local and tie with experimental-123 branch on github)
+
 Adding a branch and getting to it in one command
 git checkout -b branchname
 
