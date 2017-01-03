@@ -30,8 +30,11 @@ To create a tag with message (annotation), do git tag -s tag_name -m "message he
 
 To verify a tag, use git tag -v tag_name ( v => verify )
 
-To delete a tag, do git tag -d tag_name
+To delete a tag from local, do git tag -d tag_name
+To delete a tag from repo, do git push --delete origin tag_name
 
-To push tags to remote we need to do, git push --tags
+To push tags to remote we need to do, 
+git push origin --tags (this will push all the tags from your local that the repo does not still have)
+git push origin tag_name (this will push specific tag to the repo)
 
 
